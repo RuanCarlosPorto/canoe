@@ -6,9 +6,9 @@
         <div class="tab" v-for="(tab, index) in tabs" :key="tab" :class="{ '--active': index === step }"
           @click="step = index">{{ tab }}</div>
       </section>
-      <funds-section v-if="step === 0" />
-      <funds-duplicate-section v-if="step === 1" />
-      <companies-section v-if="step === 2" />
+      <funds-section v-if="step === 1" />
+      <funds-duplicate-section v-if="step === 2" />
+      <companies-section v-if="step === 0" />
     </div>
   </section>
 </template>
@@ -28,9 +28,9 @@ export default {
     return {
       step: 0,
       tabs: [
+        'Companies',
         'Funds',
         'Possible duplicates',
-        'Companies'
       ]
     }
   },
