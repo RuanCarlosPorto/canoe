@@ -11,3 +11,5 @@ Step by step to run the application
 - Install npm dependencies: `npm install`
 - Run vue frontend: `npm run dev`
 - Access the application in the browser: `http://localhost:8000`
+
+* ER Diagram is present in graph.png file
